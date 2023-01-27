@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import newlogo from "./newlogo.png"; 
+import CharacterContainer from './containers/CharacterContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='header'>
+    <div className="navbar">
+      <img src={newlogo} alt = "logo" width="100"/> 
+      
+      
     </div>
+    <div className="content">
+    <h1>Rick and Morty</h1>
+    <h1>Shawty!</h1>
+    </div>
+    </div>
+    <div className='body'>
+    <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'></link>
+    <CharacterContainer />
+    </div>
+    <footer >
+    {/* <p>&copy; Rick and Morty 2023</p> */}
+    </footer>
+    </>
   );
 }
 
